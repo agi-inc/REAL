@@ -40,6 +40,8 @@ git clone https://github.com/agi-inc/REAL.git
 
 cd REAL
 
+pip install -e ./
+
 # Install Playwright browser dependencies
 playwright install --force
 
@@ -85,16 +87,6 @@ See `example/README.md` and sample agents:
 - `example/custom.py` — custom agent logic
 - `example/nova.py` — browser-based custom agent (e.g. Amazon NovaAct)
 - `example/hackable.py` — highly configurable agent shell
-
-## Local Development
-
-To run locally:
-
-```bash
-git clone https://github.com/YOUR_ORG/realevals.git
-cd realevals
-pip install -e .
-```
 
 ## 🌐 Available Tasks
 
@@ -204,4 +196,4 @@ All trademarks and trade names belong to their respective owners. If you are a r
 
 ---
 
-**Code and evaluation suite will remain unchanged for the review period (4 months).**
+**Code and evaluation suite on this repo will remain frozen**
