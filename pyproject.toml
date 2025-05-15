@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agisdk"
+version = "0.1.20"
+authors = [
+    {name = "Diego Caples", email = "diego@theagi.company"},
+    {name = "Prannay Hebbar", email = "prannay@theagi.company"}
+]
+description = "AGI SDK - tools for building and evaluating AI web agents"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.20.0",
+    "pillow>=8.0.0",
+    "gymnasium>=0.28.0",
+    "playwright>=1.20.0",
+    "tqdm>=4.62.0",
+    "python-dotenv>=0.19.0",
+    "openai>=1.0.0",
+    "requests>=2.25.0",
+    "pyparsing>=3.0.0",
+    "regex>=2022.0.0",
+    "jmespath>=1.0.0",
+    "beautifulsoup4>=4.10.0",
+    "tiktoken>=0.3.0",
+    "anthropic>=0.5.0",
+    "lxml"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/agi-inc/agisdk"
+"Bug Tracker" = "https://github.com/agi-inc/agisdk/issues"
+"Documentation" = "https://github.com/agi-inc/agisdk"
+"Leaderboard" = "https://realevals.xyz"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"agisdk.REAL.browsergym.webclones" = ["tasks/*.json", "tasks/experimental/*.json"]
+"agisdk.REAL.browsergym.core" = ["chat_files/*.html", "chat_files/img/*.svg", "chat_files/*.png", "javascript/*.js"]

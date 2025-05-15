@@ -1,0 +1,14 @@
+results
+*.pyc
+browser-use
+browseruse
+learnstagehand
+udrive
+build
+.trash
+# Environment variables
+.env
+*.env
+.env.*
+
+**/.claude/settings.local.json
