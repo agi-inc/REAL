@@ -10,6 +10,10 @@
 <b>Build, evaluate, and benchmark AI agents on deterministic, high-fidelity web replicas of real-world apps.</b>
 </p>
 
+
+https://github.com/user-attachments/assets/5f59df1a-2dc6-4529-895d-64a269792ca5
+
+
 <!-- <p align="center">
 <img src="docs/images/real.gif" alt="REAL benchmark demo" width="600">
 </p> -->
